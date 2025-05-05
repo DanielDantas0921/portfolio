@@ -7,7 +7,7 @@ const port = 3000;
 app.use(express.json());
 
 // Rota simples
-app.get('/index', (req, res) => {
+app.get('/teste', (req, res) => {
   res.send('Olá, mundo!');
 });
 
@@ -19,7 +19,7 @@ app.listen(port, () => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Rota principal (opcional, pois o index.html já será carregado)
-app.get('/inicio', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
