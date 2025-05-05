@@ -7,7 +7,7 @@ const port = 3000;
 app.use(express.json());
 
 // Rota simples
-app.get('/', (req, res) => {
+app.get('/index', (req, res) => {
   res.send('Olá, mundo!');
 });
 
